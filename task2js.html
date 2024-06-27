@@ -1,0 +1,21 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Alphabetical Order</title>
+</head>
+<body>
+    <h2>Enter a string to Alphabetize:</h2>
+    <input type="text" id="inputString" />
+    <button onclick="alphabetizeString()">Alphabetize</button>
+    <p id="result"></p>
+
+    <script>
+        function alphabetizeString() {
+            var input = document.getElementById("inputString").value;
+            var alphabetized = input.split('').sort().join('');
+            document.getElementById("result").innerText = "Expected Output: " + alphabetized;
+        }
+    </script>
+</body>
+</html>

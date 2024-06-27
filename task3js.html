@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1 style="background-color: aqua;">Simple Calculator</h1><br></br>
+    <form action="">
+        <label for="">1st Number:
+            <input type="number" id="one">
+        </label><br><br>
+        <label for="">2nd Number:
+            <input type="number" id="two">
+        </label>
+    </form><br>
+
+    <button type="button" onclick="Multiply()">Multiply</button>
+    <button type="button" onclick="Divide()">Divide</button>
+    <br>
+    <p>The Result Is:</p>
+    <p id="res"></p>
+    <script>
+        function Multiply() {
+            let a = document.querySelector("#one").value;
+            let b = document.querySelector("#two").value;
+            let res = document.querySelector("#res");
+            res.innerHTML = Number(a) * Number(b);
+        }
+        function Divide() {
+            let a = document.querySelector("#one").value;
+            let b = document.querySelector("#two").value;
+            let res = document.querySelector("#res");
+            res.innerHTML = Number(a) / Number(b);
+        }
+    </script>
+    
+</body>
+</html>
